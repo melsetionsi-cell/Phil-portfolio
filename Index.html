@@ -1,82 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  <title>ICT Portfolio · University</title>
-  <!-- Font Awesome (icons) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- External Stylesheet -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main class="portfolio-card">
-    <!-- header -->
-    <div class="profile-header">
-      <div class="avatar-wrapper">
-        <!-- ============================================= -->
-        <!-- 👇 INSERT YOUR PICTURE HERE 👇               -->
-        <!-- Put your photo here named "profile.jpg",     -->
-        <!-- or change the src to your image path.        -->
-        <!-- If missing, the icon below appears as        -->
-        <!-- a fallback automatically.                    -->
-        <!-- ============================================= -->
-        <img src="profile.jpg" alt="Alex Rivera" class="avatar-img"
-             onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='flex';">
-        <i id="avatarFallback" class="fas fa-user-graduate avatar-icon" style="display: none;"></i>
-      </div>
-      <div class="title-section">
-        <div class="uni-badge"><i class="fas fa-university" style="margin-right: 6px;"></i> University of ICT</div>
-        <h1 class="gradient-name">Alex Rivera</h1>
-        <div class="subhead">
-          <i class="fas fa-laptop-code"></i> ICT Student · 3rd year
-          <i class="fas fa-circle" style="font-size: 0.5rem; color: #7c3aed; margin: 0 4px;"></i>
-          <span id="randomMajor">Cybersecurity & Networks</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"
+    />
+    <title>ICT Portfolio · University</title>
+    <!-- Font Awesome (icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="portfolio-card">
+      <!-- header -->
+      <div class="profile-header">
+        <div class="avatar-wrapper">
+          <!-- ============================================= -->
+          <!-- 👇 INSERT YOUR PICTURE HERE 👇               -->
+          <!-- Put your photo here named "profile.jpg",     -->
+          <!-- or change the src to your image path.        -->
+          <!-- If missing, the icon below appears as        -->
+          <!-- a fallback automatically.                    -->
+          <!-- ============================================= -->
+          <img
+            src="profile.jpeg"
+            alt="Alex Rivera"
+            class="avatar-img"
+            onerror="
+              this.style.display = 'none';
+              document.getElementById('avatarFallback').style.display = 'flex';
+            "
+          />
+          <i
+            id="avatarFallback"
+            class="fas fa-user-graduate avatar-icon"
+            style="display: none"
+          ></i>
+        </div>
+        <div class="title-section">
+          <div class="uni-badge">
+            <i class="fas fa-university" style="margin-right: 6px"></i>
+            University of ICT
+          </div>
+          <h1 class="gradient-name">PHILLIP NELSON</h1>
+          <div class="subhead">
+            <i class="fas fa-laptop-code"></i> ICT Student · 1std year
+            <i
+              class="fas fa-circle"
+              style="font-size: 0.5rem; color: #7c3aed; margin: 0 4px"
+            ></i>
+            <span id="randomMajor">Cybersecurity & Networks</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- random quote -->
-    <div class="random-quote">
-      <i class="fas fa-quote-left"></i>
-      <span id="quoteText">Loading inspiration...</span>
-    </div>
+      <!-- random quote -->
+      <div class="random-quote">
+        <i class="fas fa-quote-left"></i>
+        <span id="quoteText">Loading inspiration...</span>
+      </div>
 
-    <!-- dynamic info tiles -->
-    <div class="info-grid">
-      <div class="info-tile tile-purple">
-        <i class="fas fa-code"></i>
-        <h3>Core Skills</h3>
-        <div class="skill-tags" id="skillContainer">
-          <!-- randomized skills will be injected here -->
+      <!-- dynamic info tiles -->
+      <div class="info-grid">
+        <div class="info-tile tile-purple">
+          <i class="fas fa-code"></i>
+          <h3>Core Skills</h3>
+          <div class="skill-tags" id="skillContainer">
+            <!-- randomized skills will be injected here -->
+          </div>
+        </div>
+        <div class="info-tile tile-pink">
+          <i class="fas fa-certificate"></i>
+          <h3>Certification</h3>
+          <p id="certText">Cisco CCNA (in progress)</p>
+        </div>
+        <div class="info-tile tile-blue">
+          <i class="fas fa-project-diagram"></i>
+          <h3>Latest Project</h3>
+          <p id="projectText">Smart Campus IoT Dashboard</p>
         </div>
       </div>
-      <div class="info-tile tile-pink">
-        <i class="fas fa-certificate"></i>
-        <h3>Certification</h3>
-        <p id="certText">Cisco CCNA (in progress)</p>
+
+      <!-- CV BUTTON (download) -->
+      <div class="cv-section">
+        <button class="cv-btn" id="downloadCvBtn">
+          <i class="fas fa-file-pdf"></i> Download CV
+          <i class="fas fa-arrow-down" style="font-size: 1.2rem"></i>
+        </button>
       </div>
-      <div class="info-tile tile-blue">
-        <i class="fas fa-project-diagram"></i>
-        <h3>Latest Project</h3>
-        <p id="projectText">Smart Campus IoT Dashboard</p>
+
+      <div class="footer-note">
+        <i class="fas fa-sync-alt" style="margin-right: 6px"></i> randomized
+        portfolio · built with smooth animations
       </div>
-    </div>
+    </main>
 
-    <!-- CV BUTTON (download) -->
-    <div class="cv-section">
-      <button class="cv-btn" id="downloadCvBtn">
-        <i class="fas fa-file-pdf"></i> Download CV
-        <i class="fas fa-arrow-down" style="font-size: 1.2rem;"></i>
-      </button>
-    </div>
-
-    <div class="footer-note">
-      <i class="fas fa-sync-alt" style="margin-right: 6px;"></i> randomized portfolio · built with smooth animations
-    </div>
-  </main>
-
-  <!-- External JavaScript -->
-  <script src="script.js"></script>
-</body>
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+  </body>
 </html>
