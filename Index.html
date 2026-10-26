@@ -434,15 +434,15 @@
         <!-- Put your photo here named "profile.jpg",     -->
         <!-- or change the src to your image path.        -->
         <!-- ============================================= -->
-        <img src="profile.jpg" alt="Alex Rivera" class="avatar-img"
+        <img src="profile.jpeg" alt="Phillip Nelson" class="avatar-img"
              onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='flex';">
         <i id="avatarFallback" class="fas fa-user-graduate avatar-icon" style="display: none;"></i>
       </div>
       <div class="title-section">
-        <div class="uni-badge"><i class="fas fa-university" style="margin-right: 6px;"></i> University of ICT</div>
-        <h1 class="gradient-name">Alex Rivera</h1>
+        <div class="uni-badge"><i class="fas fa-university" style="margin-right: 6px;"></i> University of MMU</div>
+        <h1 class="gradient-name">Phillip Nelson</h1>
         <div class="subhead">
-          <i class="fas fa-laptop-code"></i> ICT Student · 3rd year
+          <i class="fas fa-laptop-code"></i> ICT Student · 1st year
           <i class="fas fa-circle" style="font-size: 0.5rem; color: #7c3aed; margin: 0 4px;"></i>
           <span id="randomMajor">Cybersecurity & Networks</span>
         </div>
@@ -478,10 +478,10 @@
 
     <!-- CV BUTTON (download) -->
     <div class="cv-section">
-      <button class="cv-btn" id="downloadCvBtn">
-        <i class="fas fa-file-pdf"></i> Download CV
-        <i class="fas fa-arrow-down" style="font-size: 1.2rem;"></i>
-      </button>
+      <a href="my-cv.pdf" download="Alex_Rivera_CV.pdf" class="cv-btn" style="text-decoration: none;">
+  <i class="fas fa-file-pdf"></i> Download CV
+  <i class="fas fa-arrow-down" style="font-size: 1.2rem;"></i>
+</a>
     </div>
 
     <div class="footer-note">
@@ -578,11 +578,11 @@
 
       // ---------- CV DOWNLOAD ----------
       function downloadCV() {
-        const name = "Alex Rivera";
-        const title = "ICT Student · University of ICT";
-        const email = "alex.rivera@student.ict.edu";
-        const phone = "+1 (555) 782-3412";
-        const education = "BSc in Information and Communication Technology, University of ICT (2023 – 2027 expected)";
+        const name = "Phillip Nelson";
+        const title = "ICT Student · University of MMU";
+        const email = "nphillipe3800@gmail.com";
+        const phone = "+254743313064";
+        const education = "BSc in Information and Communication Technology, University of MMU (2026 – 2028 expected)";
         const projectsList = [
           "Smart Campus IoT Dashboard – real‑time sensor data with MQTT",
           "Network Vulnerability Scanner – automated pentesting toolkit",
@@ -644,7 +644,7 @@ References available upon request.
         const url = URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.href = url;
-        link.download = 'Alex_Rivera_CV.txt';
+        link.download = 'Phillip_Nelson_CV.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
